@@ -1,0 +1,36 @@
+$main-font: "Lato",
+sans-serif;
+$primary: #4ec5e9;
+$primary-dark: #0f9cc7;
+$primary-light: #7bd7f3;
+$dark-shadow: rgba(black, 0.3);
+$header-gradient: linear-gradient( to right bottom, rgba(78, 197, 233, 0.533), rgba(15, 156, 199, 0.5));
+%text-gardient {
+    background: linear-gradient(to right bottom, rgb(5, 224, 122), rgb(0, 110, 255));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+%hover-title {
+    &:hover {
+        transform: skewY(1.5deg) skewX(15deg) scale(1.1);
+        text-shadow: 0.5rem 1.25rem 1.5rem rgba($color: #000000, $alpha: 0.2); // x y blure
+    }
+}
+
+$orange-gradient: linear-gradient( to right bottom, rgba(255, 185, 0, 0.4), rgba(255, 119, 48, 0.4));
+$orange-dark-gradient: linear-gradient( to right bottom, rgb(255, 185, 0), rgb(255, 119, 48));
+$green-gradient: linear-gradient( to right bottom, rgba(126, 213, 111, 0.4), rgba(40, 180, 133, 0.4));
+$green-dark-gradient: linear-gradient( to right bottom, rgb(126, 213, 111), rgb(40, 180, 133));
+$blue-gradient: linear-gradient( to right bottom, rgba(41, 152, 255, 0.4), rgba(84, 66, 250, 0.4));
+$blue-dark-gradient: linear-gradient( to right bottom, rgb(41, 152, 255), rgb(84, 66, 250));
+%hover {
+    transform: translateY(-0.3rem);
+    box-shadow: 0 0.7rem 1.25rem rgba($color: #000000, $alpha: 0.2);
+}
+
+%active {
+    transform: translateY(-1px);
+    box-shadow: 0 0.3rem 0.7rem rgba($color: #000000, $alpha: 0.2);
+}
